@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="ctec.aboutme.VideoGames"
+    android:background="@drawable/csgo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have always loved video games ever since my dad played Quake and I would watch. I have been playing PC games ever since I took control over the family computer and now there isn\’t any of it left. I play with my friend Thomas and Trevor almost every day oh yea Zane also."
+        android:id="@+id/GamesText"
+        android:layout_marginBottom="83dp"
+        android:textColor="#9b9b98"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/NextScreen3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/longarrow" />
+</RelativeLayout>

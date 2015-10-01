@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".TitleScreenActivity"
     android:background="#373337"
-    android:id="@+id/">
+    android:id="@+id/TitleBackground">
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +28,8 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:textColor="#707070"
-        android:background="#252125" />
+        android:background="#252125"
+        android:enabled="true" />
 
     <TextView
         android:layout_width="wrap_content"

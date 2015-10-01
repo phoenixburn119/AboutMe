@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".WhereImFrom"
+            android:label="@string/title_activity_where_im_from" >
+        </activity>
+        <activity
+            android:name=".VideoGames"
+            android:label="@string/title_activity_video_games" >
+        </activity>
+        <activity
+            android:name=".MyCar"
+            android:label="@string/title_activity_my_car" >
+        </activity>
     </application>
 
 </manifest>

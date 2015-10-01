@@ -8,22 +8,21 @@ import android.widget.Button;
 import android.view.View;
 import android.content.Intent;
 
-public class TitleScreenActivity extends AppCompatActivity {
 
-    private Button StartButton;
+public class WhereImFrom extends AppCompatActivity {
+
+    private Button NextScreen2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_title_screen);
-        StartButton = (Button) findViewById(R.id.StartButton);
-        setupListeners();
+        setContentView(R.layout.activity_where_im_from);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_title_screen, menu);
+        getMenuInflater().inflate(R.menu.menu_where_im_from, menu);
         return true;
     }
 
@@ -40,19 +39,5 @@ public class TitleScreenActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    private void setupListeners()
-    {
-        StartButton.setOnClickListener(new View.OnClickListener()
-        {
-
-            @Override
-            public void onClick(View buttonView)
-            {
-                Intent myIntent = new Intent(buttonView.getContext(), WhereImFrom.class);
-                startActivityForResult(myIntent, 0);
-            }
-        });
     }
 }
