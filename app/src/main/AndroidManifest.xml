@@ -28,6 +28,14 @@
             android:name=".MyCar"
             android:label="@string/title_activity_my_car" >
         </activity>
+        <activity
+            android:name=".Computers"
+            android:label="@string/title_activity_computers" >
+        </activity>
+        <activity
+            android:name=".Hiking"
+            android:label="@string/title_activity_hiking" >
+        </activity>
     </application>
 
 </manifest>

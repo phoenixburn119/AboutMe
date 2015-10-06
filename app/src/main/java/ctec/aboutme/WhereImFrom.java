@@ -17,6 +17,8 @@ public class WhereImFrom extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_where_im_from);
+        NextScreen2 = (Button)findViewById(R.id.NextScreen2);
+        setupListeners();
     }
 
     @Override
@@ -39,5 +41,17 @@ public class WhereImFrom extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void setupListeners()
+    {
+        NextScreen2.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View View)
+            {
+                Intent myIntent = new Intent(View.getContext(), VideoGames.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 }

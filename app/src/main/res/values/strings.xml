@@ -6,4 +6,6 @@
     <string name="title_activity_where_im_from">WhereImFrom</string>
     <string name="title_activity_video_games">VideoGames</string>
     <string name="title_activity_my_car">MyCar</string>
+    <string name="title_activity_computers">Computers</string>
+    <string name="title_activity_hiking">Hiking</string>
 </resources>

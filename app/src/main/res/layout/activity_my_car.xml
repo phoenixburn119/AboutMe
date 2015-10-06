@@ -9,17 +9,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="I have a 1997 Acura TL 2.5. The 2.5 means it is a straight 5 cylinder it\’s pretty cool to see. It is silver and super fun to drive. I am very excited to be able to drive with friends and jam to all the best jams. "
         android:id="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:textColor="#c0bebe"
+        android:textSize="20dp"
+        android:layout_above="@+id/NextScreen4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:text="New Button"
-        android:id="@+id/button"
+        android:id="@+id/NextScreen4"
+        android:background="@drawable/longarrow"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/longarrow" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

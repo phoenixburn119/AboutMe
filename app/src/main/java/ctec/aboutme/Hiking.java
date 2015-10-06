@@ -8,22 +8,22 @@ import android.widget.Button;
 import android.view.View;
 import android.content.Intent;
 
-public class MyCar extends AppCompatActivity {
+public class Hiking extends AppCompatActivity {
 
-    public Button NextScreen4;
+    public Button NextScreen6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_car);
-        NextScreen4 = (Button)findViewById(R.id.NextScreen4);
+        setContentView(R.layout.activity_hiking);
+        NextScreen6 = (Button)findViewById(R.id.NextScreen6);
         setupListeners();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_my_car, menu);
+        getMenuInflater().inflate(R.menu.menu_hiking, menu);
         return true;
     }
 
@@ -44,11 +44,11 @@ public class MyCar extends AppCompatActivity {
 
     private void setupListeners()
     {
-        NextScreen4.setOnClickListener(new View.OnClickListener()
+        NextScreen6.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View view)
             {
-                Intent myIntent = new Intent(view.getContext(), Computers.class);
+                Intent myIntent = new Intent(view.getContext(), TitleScreenActivity.class);
                 startActivityForResult(myIntent, 0);
             }
         });

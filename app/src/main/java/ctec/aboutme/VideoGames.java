@@ -11,10 +11,13 @@ import android.content.Intent;
 
 public class VideoGames extends AppCompatActivity {
 
+    private Button NextScreen3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_games);
+        NextScreen3 = (Button)findViewById(R.id.NextScreen3);
+        setupListeners();
     }
 
     @Override
@@ -37,5 +40,17 @@ public class VideoGames extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void setupListeners()
+    {
+        NextScreen3.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View view)
+            {
+                Intent myIntent = new Intent(view.getContext(), MyCar.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
     }
 }

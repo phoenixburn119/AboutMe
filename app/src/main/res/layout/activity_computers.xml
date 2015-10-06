@@ -3,31 +3,28 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="ctec.aboutme.WhereImFrom"
-    android:background="@drawable/utahsign">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="ctec.aboutme.Computers"
+    android:background="@drawable/acer">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="	I was born and raised from Utah. I love Utah\’s weather because we have hot and cold it\’s just right. I have lived here all my life and have only moved house once. "
-        android:id="@+id/WhereInfo"
-        android:layout_marginBottom="90dp"
-        android:textColor="#0d0d0d"
-        android:textSize="20dp"
-        android:textAlignment="center"
-        android:layout_alignParentBottom="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="I have slowly gained access to the family computer over the years. But I have mostly replaced every single part in it to become my own PC. It is my pride and joy and I have put it together all by myself."
+        android:id="@+id/textView2"
+        android:textColor="#fbfffd"
+        android:layout_above="@+id/NextScreen5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:id="@+id/NextScreen2"
+        android:layout_height="wrap_content"
+        android:id="@+id/NextScreen5"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:background="@drawable/longarrow"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
